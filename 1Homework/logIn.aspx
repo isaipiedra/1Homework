@@ -55,7 +55,7 @@
                             <span class='input-group-text bg-info border-0'>
                                 <i class='bx bxs-lock-alt text-light'></i>
                             </span>
-                            <asp:TextBox ID="password" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Password'></asp:TextBox>
+                            <asp:TextBox ID="password" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Password' autocomplete="off" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="pass" runat="server" ControlToValidate="password" ErrorMessage="Enter a password" ForeColor="Red" class="ps-2"></asp:RequiredFieldValidator>
                         </figure>
                         <%-- Submit button --%>

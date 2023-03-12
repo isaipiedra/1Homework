@@ -53,34 +53,56 @@
             </nav>
         </section>
     </header>
-    <%-- Video section --%>
-    <section class="position-relative container-fluid mt-3">
-        <article class="w-100 bg-success bg-opacity-50 p-3 text-light rounded-3 shadow">
-            <h1 class="d-inline border-end border-3 pe-3 align-middle">Video</h1>
-            <h5 class="d-inline ps-2">Let's watch something, here you have a video.</h5>
-        </article>
-    </section>
 
-    <%-- Videogame section --%>
-    <section class="position-relative container-fluid mt-3">
-        <article class="w-100 bg-info bg-opacity-50 p-3 text-light rounded-3 shadow">
-            <div class="d-block">
-                <h1 class="d-inline border-end border-3 pe-3 align-middle">Videogame</h1>
-                <h5 class="d-inline p-2">Let's play something, can you beat the machine?</h5>
-            </div>
-        </article>
-    </section>
-
-    <%-- Drawing section --%>
-    <section class="position-relative container-fluid mt-3">
-        <article class="w-100 bg-primary bg-opacity-50 p-3 text-light rounded-3 shadow">
-            <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
-            <h5 class="d-inline ps-2">Let's draw something, select a fruit to be drawn.</h5>
-        </article>
-    </section>
+    <%-- Page functions --%>
     <form id="form1" runat="server">
-        <div>
-        </div>
+
+        <%-- Video section --%>
+        <section class="position-relative container-fluid mt-3">
+            <article class="w-100 bg-success bg-opacity-50 p-3 text-light rounded-3 shadow">
+                <%-- Tittle of the video section --%>
+                <div>
+                    <h1 class="d-inline border-end border-3 pe-3 align-middle">Video</h1>
+                    <h5 class="d-inline ps-2">Let's watch something, here you have a video. Also, you can upload the link of your favorite youtube video.</h5>
+                </div>
+                <%-- Video player and uploader --%>
+                <div class="w-100 align-content-center mt-4">
+                    <%-- Video selector / uploader for the user --%>
+                    <div class="mb-3">
+                        <asp:TextBox ID="videoUrl" runat="server" class="form-control w-50 d-inline bg-opacity-50" placeholder="Video url - ONLY YOUTUBE ALLOWED"></asp:TextBox>
+                        <asp:Button ID="loadVideo" runat="server" Text="Load" OnClick="loadVideo_Click" class="ms-3 btn btn-info d-inline" />
+                    </div>
+                    <%-- Video player with default video --%>
+                    <iframe
+                        name="videoTag"
+                        id="videoTag"
+                        runat="server"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/D7kz1LvX8vA"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    </div>
+            </article>
+        </section>
+
+        <%-- Videogame section --%>
+        <section class="position-relative container-fluid mt-3">
+            <article class="w-100 bg-info bg-opacity-50 p-3 text-light rounded-3 shadow">
+                <div class="d-block">
+                    <h1 class="d-inline border-end border-3 pe-3 align-middle">Videogame</h1>
+                    <h5 class="d-inline p-2">Let's play something, can you beat the machine?</h5>
+                </div>
+            </article>
+        </section>
+
+        <%-- Drawing section --%>
+        <section class="position-relative container-fluid mt-3">
+            <article class="w-100 bg-primary bg-opacity-50 p-3 text-light rounded-3 shadow">
+                <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
+                <h5 class="d-inline ps-2">Let's draw something, select a fruit to be drawn.</h5>
+            </article>
+        </section>
     </form>
 </body>
 <%-- Bootstrap script reference --%>
