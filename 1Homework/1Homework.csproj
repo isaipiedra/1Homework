@@ -82,14 +82,33 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bootstrap\css\background.css" />
     <Content Include="Bootstrap\css\bootstrap.css" />
+    <Content Include="Bootstrap\js\bootstrap.js" />
+    <Content Include="IMGS\laugh.png" />
+    <Content Include="index.aspx" />
+    <Content Include="logIn.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logIn.aspx.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logIn.aspx.designer.cs">
+      <DependentUpon>logIn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Bootstrap\js" />
+    <Content Include="DataBase\users.xlsx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
