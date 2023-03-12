@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%-- Page Tittle --%>
     <title>Log In</title>
     <%-- Style References --%>
     <link href="Bootstrap/css/background.css" rel="stylesheet" />
@@ -46,7 +47,7 @@
                             <span class='input-group-text bg-info border-0'>
                                 <i class='bx bxs-user text-light'></i>
                             </span>
-                            <asp:TextBox ID="username" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Username' aria-label='Username'></asp:TextBox>
+                            <asp:TextBox ID="username" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Username'></asp:TextBox>
                             <asp:RequiredFieldValidator ID="usName" runat="server" ControlToValidate="username" ErrorMessage="Enter a username" ForeColor="Red" class="ps-2"></asp:RequiredFieldValidator>
                         </figure>
                         <%-- Password icon and input --%>
@@ -54,7 +55,7 @@
                             <span class='input-group-text bg-info border-0'>
                                 <i class='bx bxs-lock-alt text-light'></i>
                             </span>
-                            <asp:TextBox ID="password" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Password' aria-label='Username'></asp:TextBox>
+                            <asp:TextBox ID="password" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Password'></asp:TextBox>
                             <asp:RequiredFieldValidator ID="pass" runat="server" ControlToValidate="password" ErrorMessage="Enter a password" ForeColor="Red" class="ps-2"></asp:RequiredFieldValidator>
                         </figure>
                         <%-- Submit button --%>
