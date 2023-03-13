@@ -10,11 +10,11 @@
     <%-- Style References --%>
     <link href="Bootstrap/css/background.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
 <body>
     <%-- Page Background --%>
-    <div class='background'>
+    <div class="background">
         <%-- Individual circles of the backgroung animation --%>
         <span></span>
         <span></span>
@@ -27,28 +27,29 @@
         <span></span>
         <span></span>
     </div>
+
     <%-- Page Header --%>
-    <header class='position-relative navbar navbar-dark navbar-expand-md fixed-top bg-warning bg-opacity-75 rounded-bottom'>
+    <header class="position-relative navbar navbar-dark navbar-expand-md fixed-top bg-warning bg-opacity-75 rounded-bottom">
         <%-- Navigation bar and Icon --%>
-        <section class='container-fluid'>
+        <section class="container-fluid">
             <%-- Icon --%>
             <div class="container">
                 <a class="navbar-brand" href="index.aspx">
-                    <img src="IMGS/laugh.png" alt="" width="50" />
+                    <img src="IMGS/poster.png" width="50" />
                 </a>
             </div>
             <%-- Responsive toggler --%>
-            <button class='navbar-toggler' type='button'
-                data-bs-toggle='collapse' data-bs-target='#myNavbarToggler7'
-                aria-controls='navbarNav' aria-expanded='false'
-                aria-label='Toggle navigation'>
-                <span class='navbar-toggler-icon'></span>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#myNavbarToggler7"
+                aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <%-- Log Out --%>
-            <nav class='collapse navbar-collapse' id='myNavbarToggler7'>
-                <ul class='navbar-nav mx-auto'>
-                    <li class='nav-item'><a class='nav-link'
-                        href='login.aspx'>Log Out</a></li>
+            <nav class="collapse navbar-collapse" id="myNavbarToggler7">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link"
+                        href="login.aspx">Log Out</a></li>
                 </ul>
             </nav>
         </section>
@@ -62,9 +63,9 @@
             <article class="w-100 bg-success bg-opacity-50 p-3 text-light rounded-3 shadow">
                 <%-- Tittle of the video section --%>
                 <div>
+                    <img width="50" src="IMGS/televisor.png" class="d-inline me-2"/>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Video</h1>
-                    <h5 class="d-inline ps-2">Let's watch something, here you have a video. Also, you can upload the link of your favorite youtube video.</h5>
-                    <img width="50" src="IMGS/televisor.png" class="float-start me-2"/>
+                    <h5 class="d-inline ps-2">Let"s watch something, here you have a video. Also, you can upload the link of your favorite youtube video.</h5>
                 </div>
                 <%-- Video player and uploader --%>
                 <div class="w-100 align-content-center mt-4">
@@ -93,9 +94,9 @@
             <article class="w-100 bg-info bg-opacity-50 p-3 text-light rounded-3 shadow">
                 <%-- Tittle of the videogame section --%>
                 <div>
+                    <img width="50" src="IMGS/arcada.png" class="d-inline me-2"/>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Videogame</h1>
-                    <h5 class="d-inline ps-2">Let's play something, can you beat the machine?</h5>
-                    <img width="50" src="IMGS/arcada.png" class="float-start me-2"/>
+                    <h5 class="d-inline ps-2">Let"s play something, can you beat the machine?</h5>   
                 </div>
             </article>
         </section>
@@ -105,10 +106,11 @@
             <article class="w-100 bg-primary bg-opacity-50 p-3 text-light rounded-3 shadow">
                 <%-- Tittle of the drawing section --%>
                 <div>
+                    <img width="50" src="IMGS/tintero.png" class="d-inline me-2" />
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
-                    <h5 class="d-inline ps-2">Let's draw some shapes, you can choose the shape and its color.</h5>
-                    <img width="50" src="IMGS/tintero.png" class="float-start me-2" />
+                    <h5 class="d-inline ps-2">Let"s draw some shapes, you can choose the shape and its color.</h5>
                 </div>
+                <%-- Drawing section with the selectors of the shape and color --%>
                 <div class="mt-3 p-1">
                     <select id="shapeSelector" runat="server" class="form-select w-25 d-inline">
                         <option selected value="0">Square</option>
@@ -117,6 +119,7 @@
                         <option value="3">Heart</option>
                     </select>
                     <input style="top:7px;" id="colorPicker" runat="server" type="color" name="colors" value="Black" class="d-inline-block border-0 ms-2 form-control form-control-color position-relative"/>
+                    <%-- Button to create the desired shape --%>
                     <asp:Button ID="shapeDraw" style="top:-20px;" runat="server" Text="Draw!" OnClick="shapeDraw_Click" class="ms-2 btn btn-success d-inline opacity-100" />
                 </div>
             </article>

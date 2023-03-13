@@ -10,11 +10,11 @@
     <%-- Style References --%>
     <link href="Bootstrap/css/background.css" rel="stylesheet" />
     <link href="Bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 </head>
-<body class=''>
+<body>
     <%-- Page Background --%>
-    <div class='background'>
+    <div class="background">
         <%-- Individual circles of the backgroung animation --%>
         <span></span>
         <span></span>
@@ -36,31 +36,31 @@
                 <aside>
                     <%-- Icon and description --%>
                     <div class="mb-4">
-                        <img class="float-start me-2" width="50" src="IMGS/laugh.png" />
+                        <img class="float-start me-2" width="50" src="IMGS/poster.png" />
                         <h1 class="ps-3">Welcome!</h1>
                     </div>
                     <p class="">Write down your credentials to access our page.</p>
                     <%-- Log In form --%>
                     <form id="form1" runat="server">
                         <%-- Username icon and input --%>
-                        <figure class='input-group mb-3 w-100'>
-                            <span class='input-group-text bg-info border-0'>
-                                <i class='bx bxs-user text-light'></i>
+                        <figure class="input-group mb-3 w-100">
+                            <span class="input-group-text bg-info border-0">
+                                <i class="bx bxs-user text-light"></i>
                             </span>
-                            <asp:TextBox ID="username" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Username'></asp:TextBox>
+                            <asp:TextBox ID="username" runat="server" class="form-control bg-light bg-opacity-50" placeholder="Username"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="usName" runat="server" ControlToValidate="username" ErrorMessage="Enter a username" ForeColor="Red" class="ps-2"></asp:RequiredFieldValidator>
                         </figure>
                         <%-- Password icon and input --%>
-                        <figure class='input-group mb-3 w-100'>
-                            <span class='input-group-text bg-info border-0'>
-                                <i class='bx bxs-lock-alt text-light'></i>
+                        <figure class="input-group mb-3 w-100">
+                            <span class="input-group-text bg-info border-0">
+                                <i class="bx bxs-lock-alt text-light"></i>
                             </span>
-                            <asp:TextBox ID="password" runat="server" class='form-control bg-light bg-opacity-50' placeholder='Password' autocomplete="off" TextMode="Password"></asp:TextBox>
+                            <asp:TextBox ID="password" runat="server" class="form-control bg-light bg-opacity-50" placeholder="Password" autocomplete="off" TextMode="Password"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="pass" runat="server" ControlToValidate="password" ErrorMessage="Enter a password" ForeColor="Red" class="ps-2"></asp:RequiredFieldValidator>
                         </figure>
                         <%-- Submit button --%>
                         <span>
-                            <asp:Button ID="submitLogIn" runat="server" Text="Log In" class='btn btn-success w-25' onClick="submitLogIn_Click" />
+                            <asp:Button ID="submitLogIn" runat="server" Text="Log In" class="btn btn-success w-25" onClick="submitLogIn_Click" />
                         </span>
                     </form>
                 </aside>

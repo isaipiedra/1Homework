@@ -86,7 +86,7 @@
     <Content Include="Bootstrap\css\bootstrap.css" />
     <Content Include="Bootstrap\js\bootstrap.js" />
     <Content Include="IMGS\arcada.png" />
-    <Content Include="IMGS\laugh.png" />
+    <Content Include="IMGS\poster.png" />
     <Content Include="IMGS\televisor.png" />
     <Content Include="IMGS\tintero.png" />
     <Content Include="index.aspx" />
