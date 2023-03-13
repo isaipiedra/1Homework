@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="_1Homework.index" %>
+﻿<%@ Page Language="C#" MaintainScrollPositionOnPostBack="true" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="_1Homework.index" %>
 
 <!DOCTYPE html>
 
@@ -69,8 +69,8 @@
                 <div class="w-100 align-content-center mt-4">
                     <%-- Video selector / uploader for the user --%>
                     <div class="mb-3">
-                        <asp:TextBox ID="videoUrl" runat="server" class="form-control w-50 d-inline bg-opacity-50" placeholder="Video url - ONLY YOUTUBE ALLOWED"></asp:TextBox>
-                        <asp:Button ID="loadVideo" runat="server" Text="Load" OnClick="loadVideo_Click" class="ms-3 btn btn-info d-inline" />
+                        <asp:TextBox ID="videoUrl" runat="server" class="form-control w-50 d-inline opacity-75" placeholder="Video url - ONLY YOUTUBE ALLOWED"></asp:TextBox>
+                        <asp:Button ID="loadVideo" runat="server" Text="Load" OnClick="loadVideo_Click" class="ms-3 btn btn-info d-inline opacity-100" />
                     </div>
                     <%-- Video player with default video --%>
                     <iframe
@@ -81,6 +81,7 @@
                         height="315"
                         src="https://www.youtube.com/embed/D7kz1LvX8vA"
                         frameborder="0"
+                        class="rounded-3"
                         allowfullscreen></iframe>
                     </div>
             </article>
@@ -89,18 +90,32 @@
         <%-- Videogame section --%>
         <section class="position-relative container-fluid mt-3">
             <article class="w-100 bg-info bg-opacity-50 p-3 text-light rounded-3 shadow">
-                <div class="d-block">
+                <%-- Tittle of the videogame section --%>
+                <div>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Videogame</h1>
-                    <h5 class="d-inline p-2">Let's play something, can you beat the machine?</h5>
+                    <h5 class="d-inline ps-2">Let's play something, can you beat the machine?</h5>
                 </div>
             </article>
         </section>
 
         <%-- Drawing section --%>
-        <section class="position-relative container-fluid mt-3">
+        <section class="position-relative container-fluid mt-3 mb-3">
             <article class="w-100 bg-primary bg-opacity-50 p-3 text-light rounded-3 shadow">
-                <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
-                <h5 class="d-inline ps-2">Let's draw something, select a fruit to be drawn.</h5>
+                <%-- Tittle of the drawing section --%>
+                <div>
+                    <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
+                    <h5 class="d-inline ps-2">Let's draw some shapes, you can choose the shape and its color.</h5>
+                </div>
+                <div class="mt-3 p-1">
+                    <select id="shapeSelector" runat="server" class="form-select w-25 d-inline">
+                        <option selected value="0">Square</option>
+                        <option value="1">Circle</option>
+                        <option value="2">Diamond</option>
+                        <option value="3">Heart</option>
+                    </select>
+                    <input style="top:7px;" id="colorPicker" runat="server" type="color" name="colors" value="Black" class="d-inline-block border-0 ms-2 form-control form-control-color position-relative"/>
+                    <asp:Button ID="shapeDraw" style="top:-20px;" runat="server" Text="Draw!" OnClick="shapeDraw_Click" class="ms-2 btn btn-success d-inline opacity-100" />
+                </div>
             </article>
         </section>
     </form>
