@@ -64,6 +64,7 @@
                 <div>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Video</h1>
                     <h5 class="d-inline ps-2">Let's watch something, here you have a video. Also, you can upload the link of your favorite youtube video.</h5>
+                    <img width="50" src="IMGS/televisor.png" class="float-start me-2"/>
                 </div>
                 <%-- Video player and uploader --%>
                 <div class="w-100 align-content-center mt-4">
@@ -94,6 +95,7 @@
                 <div>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Videogame</h1>
                     <h5 class="d-inline ps-2">Let's play something, can you beat the machine?</h5>
+                    <img width="50" src="IMGS/arcada.png" class="float-start me-2"/>
                 </div>
             </article>
         </section>
@@ -105,6 +107,7 @@
                 <div>
                     <h1 class="d-inline border-end border-3 pe-3 align-middle">Drawing</h1>
                     <h5 class="d-inline ps-2">Let's draw some shapes, you can choose the shape and its color.</h5>
+                    <img width="50" src="IMGS/tintero.png" class="float-start me-2" />
                 </div>
                 <div class="mt-3 p-1">
                     <select id="shapeSelector" runat="server" class="form-select w-25 d-inline">
