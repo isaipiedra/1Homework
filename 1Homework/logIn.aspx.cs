@@ -38,7 +38,7 @@ namespace _1Homework
             bool userNameCheck = false, passwordCheck = false;
 
             //Data base path
-            string path = "H:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\1Homework\\DataBase\\users.xlsx";
+            string path = "D:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\1Homework\\DataBase\\users.xlsx";
 
             //Open the data base
             SLDocument dataBase = new SLDocument(path);
@@ -64,4 +64,4 @@ namespace _1Homework
             return (userNameCheck && passwordCheck);
         }
     }
-}
+}       

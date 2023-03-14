@@ -1,14 +1,5 @@
-﻿using DocumentFormat.OpenXml.Presentation;
+﻿using SpreadsheetLight;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.HtmlControls;
-using System.IO.Packaging;
-using SpreadsheetLight;
-using System.Drawing;
 
 namespace _1Homework
 {
@@ -16,8 +7,7 @@ namespace _1Homework
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Keep the last scroll position
-            Page.MaintainScrollPositionOnPostBack = true;
+
         }
 
         protected void loadVideo_Click(object sender, EventArgs e)
@@ -51,21 +41,27 @@ namespace _1Homework
                 newUrl += portion;
 
                 //Validates that the provided URL is not a Mix
-                if (newUrl.Contains("start") || newUrl.Contains("index"))
+                if (newUrl.Contains("start") || newUrl.Contains("index") || (string.IsNullOrEmpty(url)))
                 {
                     //If the URL is a Mix alerts the user and copy the default URL
                     videoTag.Attributes.Add("src", "https://www.youtube.com/embed/D7kz1LvX8vA");
+                    videoCollapse.Attributes.Add("class", "mt-3 collpase show");
+                    drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse");
                 }
                 else
                 {
                     //Change the default URL for the users provided video
                     videoTag.Attributes.Add("src", newUrl);
+                    videoCollapse.Attributes.Add("class", "mt-3 collpase show");
+                    drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse");
                 }
             }
             //If the URL was not allowed alerts the user and copy the default URL
             catch
             {
                 videoTag.Attributes.Add("src", "https://www.youtube.com/embed/D7kz1LvX8vA");
+                videoCollapse.Attributes.Add("class", "mt-3 collpase show");
+                drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse");
             }
         }
 
@@ -76,7 +72,7 @@ namespace _1Homework
 
             //Create new Excel document
             SLDocument newShape = new SLDocument();
-            
+
             //Select the first worksheet
             newShape.AddWorksheet("Sheet1");
 
@@ -120,7 +116,8 @@ namespace _1Homework
                                 if (j == 1 || j == 9)
                                 {
                                     newShape.SetCellStyle(i, j, border);
-                                } else
+                                }
+                                else
                                 {
                                     newShape.SetCellStyle(i, j, mainColor);
                                 }
@@ -151,7 +148,8 @@ namespace _1Homework
                                 if (j == 2 || j == 8)
                                 {
                                     newShape.SetCellStyle(i, j, border);
-                                } else if (j >= 3 && j <= 7)
+                                }
+                                else if (j >= 3 && j <= 7)
                                 {
                                     newShape.SetCellStyle(i, j, mainColor);
                                 }
@@ -170,7 +168,7 @@ namespace _1Homework
                             }
                         }
                     }
-                    break; 
+                    break;
                 case "2":
                     //Set the name of the document with the type of shape (diamond)
                     shape = "diamond";
@@ -194,7 +192,8 @@ namespace _1Homework
                                 if (j == 4 || j == 6)
                                 {
                                     newShape.SetCellStyle(i, j, border);
-                                } else if (j == 5)
+                                }
+                                else if (j == 5)
                                 {
                                     newShape.SetCellStyle(i, j, mainColor);
                                 }
@@ -266,7 +265,7 @@ namespace _1Homework
                                 {
                                     newShape.SetCellStyle(i, j, mainColor);
                                 }
-                            } 
+                            }
                             //Between rows 3 and 5 there is border in the 1st and 9th column and inside otherwise
                             else if (i >= 3 && i <= 5)
                             {
@@ -325,14 +324,134 @@ namespace _1Homework
                             }
                         }
                     }
-                    break;  
+                    break;
             }
-            
+
             //Create the path of the document with the shape name
-            string path = $"H:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\1Homework\\DataBase\\{shape}.xlsx";
-           
+            string path = $"D:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\1Homework\\DataBase\\{shape}.xlsx";
+
             //Save the shape drawing
             newShape.SaveAs(path);
+
+            drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse show");
+            videoCollapse.Attributes.Add("class", "mt-3 collapse hidden");
+        }
+
+        protected void generateGame_Click(object sender, EventArgs e)
+        {
+            generateGame.Visible = false;
+            gameDisplay.Visible = true;
+            opportunities.Text = "6";
+
+            Random random = new Random();
+            int randomPosition = random.Next(2, 11);
+
+            SLDocument words = new SLDocument("D:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\1Homework\\DataBase\\hangmanWords.xlsx");
+            string value = words.GetCellValueAsString(randomPosition, 1);
+            string spaces = string.Empty;
+
+            for (int i = 0; i < value.Length; i++)
+            {
+                spaces += "_";
+            }
+
+            word.Text = spaces;
+            word.Attributes.Add("value", value);
+
+            results.Visible = false;
+            letterNum.Text = $"({value.Length})";
+
+            gameCollapse.Attributes.Add("class", "collapse show");
+            drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse");
+            videoCollapse.Attributes.Add("class", "mt-3 collapse hidden");
+        }
+
+        protected void guessLetter_Click(object sender, EventArgs e)
+        {
+            int oppNum = Convert.ToInt32(opportunities.Text);
+
+            try
+            {
+                char letter = Convert.ToChar(letterGuessed.Text.Trim());
+                string hangman = word.Attributes["value"];
+                string newWord = string.Empty;
+
+                for (int i = 0; i < hangman.Length; i++)
+                {
+                    if (word.Text[i] != Convert.ToChar("_"))
+                    {
+                        newWord += word.Text[i];
+                    }
+                    else if (letter == hangman[i])
+                    {
+                        newWord += letter;
+                    }
+                    else
+                    {
+                        newWord += "_";
+                    }
+                }
+
+                if (newWord == word.Text)
+                {
+
+                    if (oppNum - 1 <= 0)
+                    {
+                        generateGame.Visible = true;
+                        gameDisplay.Visible = false;
+                        results.Visible = true;
+
+                        results.Attributes.Add("class", "d-inline ms-3 text-danger fw-bold");
+                        results.Text = $"Try again! You didn't guessed it correctly, the word was: \"{word.Attributes["value"]}\"";
+                    }
+                    else
+                    {
+                        chance.Attributes["class"] += "text-danger fw-bold";
+                        chance.Text = "That's not correct";
+                        opportunities.Text = Convert.ToString(oppNum - 1);
+                    }
+                }
+                else
+                {
+                    word.Text = newWord;
+                    chance.Attributes["class"] += "text-success fw-bold";
+                    chance.Text = "You guessed a word!";
+                    opportunities.Text = Convert.ToString(oppNum);
+
+                    if (word.Text == word.Attributes["value"])
+                    {
+                        generateGame.Visible = true;
+                        gameDisplay.Visible = false;
+                        results.Visible = true;
+                        results.Attributes.Add("class", "d-inline ms-3 text-success fw-bold");
+                        results.Text = $"Congratulations! You won this round, with the world \"{word.Attributes["value"]}\"";
+                    }
+                }
+
+                letterGuessed.Text = string.Empty;
+                gameCollapse.Attributes.Add("class", "collapse show");
+                drawingCollapse.Attributes.Add("class", "mt-3 p-1 collapse");
+                videoCollapse.Attributes.Add("class", "mt-3 collapse hidden");
+            }
+            catch
+            {
+                if (oppNum - 1 <= 0)
+                {
+                    generateGame.Visible = true;
+                    gameDisplay.Visible = false;
+                    results.Visible = true;
+
+                    results.Attributes.Add("class", "d-inline ms-3 text-danger fw-bold");
+                    results.Text = $"Try again! You didn't guessed it correctly, the word was: \"{word.Attributes["value"]}\"";
+                }
+                else
+                {
+                    chance.Attributes["class"] += "text-danger fw-bold";
+                    chance.Text = "That's not correct";
+                    opportunities.Text = Convert.ToString(oppNum - 1);
+                    letterGuessed.Text = string.Empty;
+                }
+            }
         }
     }
 }
