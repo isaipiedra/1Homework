@@ -69,15 +69,6 @@ namespace _1Homework
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl gameCollapse;
 
         /// <summary>
-        /// Control generateGame.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button generateGame;
-
-        /// <summary>
         /// Control results.
         /// </summary>
         /// <remarks>
@@ -85,6 +76,15 @@ namespace _1Homework
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label results;
+
+        /// <summary>
+        /// Control generateGame.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button generateGame;
 
         /// <summary>
         /// Control gameDisplay.

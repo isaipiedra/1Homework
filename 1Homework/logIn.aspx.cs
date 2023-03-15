@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using _1Homework.Modules;
+using DocumentFormat.OpenXml.ExtendedProperties;
 using SpreadsheetLight;
 
 namespace _1Homework
@@ -26,11 +27,17 @@ namespace _1Homework
             //If the response was the url of the index then redirect
             if (response.Contains("aspx"))
             {
-                Response.Redirect(response);
+                //Manages that the first event is the alert an then the redirect
+                ScriptManager.RegisterStartupScript(this, this.GetType(),
+                "alert",
+                $"alert('Provided credentials were correct. Redirecting...'); window.location = '{response}';",
+                true);
+            }
             //Else let the user now credentials were not valid
-            } else
+            else
             {
-                Response.Write(response);
+                credentialAlert.Attributes["class"] = "alert alert-danger show";
+                errorMsg.Text = response;
             }
         }
 

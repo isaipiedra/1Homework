@@ -271,7 +271,7 @@ namespace _1Homework.Modules
             }
 
             //Create the path of the document with the shape name
-            string path = $"G:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\DataBase\\{shape}.xlsx";
+            string path = $"G:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\Drawings\\{shape}.xlsx";
 
             //Save the shape drawing
             newShape.SaveAs(path);
