@@ -142,3 +142,99 @@ D:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Hom
 D:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\1Homework\obj\Debug\1Homework.csproj.CopyComplete
 D:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\1Homework\obj\Debug\1Homework.dll
 D:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\1Homework\obj\Debug\1Homework.pdb
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\1Homework.dll.config
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\1Homework.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\1Homework.pdb
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csc.exe
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csc.exe.config
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csc.rsp
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csi.exe
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csi.exe.config
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\csi.rsp
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Buffers.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Memory.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\vbc.exe
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\vbc.exe.config
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\vbc.rsp
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\VBCSCompiler.exe
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\DocumentFormat.OpenXml.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\SpreadsheetLight.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\System.Drawing.Common.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\System.IO.Packaging.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\DocumentFormat.OpenXml.xml
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\SpreadsheetLight.xml
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\System.Drawing.Common.xml
+C:\Users\isaip\Desktop\TAREA 1\1Homework\bin\System.IO.Packaging.xml
+C:\Users\isaip\Desktop\TAREA 1\1Homework\obj\Debug\1Homework.csproj.AssemblyReference.cache
+C:\Users\isaip\Desktop\TAREA 1\1Homework\obj\Debug\1Homework.csproj.CoreCompileInputs.cache
+C:\Users\isaip\Desktop\TAREA 1\1Homework\obj\Debug\1Homework.csproj.CopyComplete
+C:\Users\isaip\Desktop\TAREA 1\1Homework\obj\Debug\1Homework.dll
+C:\Users\isaip\Desktop\TAREA 1\1Homework\obj\Debug\1Homework.pdb
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\1Homework.dll.config
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\1Homework.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\1Homework.pdb
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csc.exe
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csc.exe.config
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csc.rsp
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csi.exe
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csi.exe.config
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\csi.rsp
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.Managed.Core.targets
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Buffers.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Collections.Immutable.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Memory.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Numerics.Vectors.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Reflection.Metadata.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Text.Encoding.CodePages.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\vbc.exe
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\vbc.exe.config
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\vbc.rsp
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\VBCSCompiler.exe
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\roslyn\VBCSCompiler.exe.config
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\DocumentFormat.OpenXml.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\SpreadsheetLight.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\System.Drawing.Common.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\System.IO.Packaging.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\DocumentFormat.OpenXml.xml
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\SpreadsheetLight.xml
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\System.Drawing.Common.xml
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\bin\System.IO.Packaging.xml
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\obj\Debug\1Homework.csproj.AssemblyReference.cache
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\obj\Debug\1Homework.csproj.CoreCompileInputs.cache
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\obj\Debug\1Homework.csproj.CopyComplete
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\obj\Debug\1Homework.dll
+G:\Desarrollo Web Duodécimo\Programación para web\PRIMER SEMESTRE\1 TAREA\1Homework\obj\Debug\1Homework.pdb

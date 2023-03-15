@@ -110,6 +110,10 @@
     <Compile Include="logIn.aspx.designer.cs">
       <DependentUpon>logIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Modules\DrawingService.cs" />
+    <Compile Include="Modules\GameService.cs" />
+    <Compile Include="Modules\LoginService.cs" />
+    <Compile Include="Modules\VideoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
