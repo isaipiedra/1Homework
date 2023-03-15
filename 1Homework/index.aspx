@@ -34,15 +34,15 @@
         <section class="container-fluid">
             <%-- Icon --%>
             <div class="container">
-                <a class="navbar-brand float-start" href="index.aspx">
+                <a class="navbar-brand d-inline-block" href="index.aspx">
                     <img src="IMGS/poster.png" width="50" />
                 </a>
+                <a class="navbar-brand fs-2 fw-bold d-inline-block align-middle pb-2 ms-0" href="index.aspx">Cowabunga</a>
             </div>
             <%-- Log Out --%>
             <nav>
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a class="nav-link"
-                        href="login.aspx">Log Out</a></li>
+                    <li class="nav-item"><a class="nav-link fs-4 fw-bold me-5" href="login.aspx">Log Out</a></li>
                 </ul>
             </nav>
         </section>
@@ -77,7 +77,7 @@
                         src="https://www.youtube.com/embed/D7kz1LvX8vA"
                         frameborder="0"
                         class="rounded-3"
-                        allowfullscreen></iframe>
+                        allowfullscreen = "allowfullscreen"></iframe>
                 </aside>
             </article>
         </section>
@@ -94,9 +94,9 @@
                 <%-- Hangman display --%>
                 <aside runat="server" class="mt-3 collapse" id="gameCollapse">
                     <%-- Button to generate the game --%>
-                    <asp:Button class="btn btn-primary my-3 d-inline" ID="generateGame" runat="server" Text="Generate Game!" OnClick="generateGame_Click" />
                     <asp:Label class="d-inline" ID="results" runat="server" Text=""></asp:Label>
-                        
+                    <asp:Button class="btn btn-primary my-3 d-inline" ID="generateGame" runat="server" Text="Generate Game!" OnClick="generateGame_Click" />
+                    
                     <%-- Game display hidden until the game has started --%>
                     <div runat="server" id="gameDisplay" visible="false">
                         <%-- Display the amount of opportunities the player has --%>
@@ -107,7 +107,7 @@
                         <%-- Display the word to be completed by the player --%>
                         <div class="d-block my-3">
                             <h5 class="d-inline">Word: </h5>
-                            <asp:Label class="d-inline text-light" ID="word" runat="server" Text=""></asp:Label>
+                            <asp:Label class="d-inline text-light fs-2" ID="word" runat="server" Text=""></asp:Label>
                             <asp:Label class="d-inline text-light" ID="letterNum" runat="server" Text=""></asp:Label>
                         </div>
                         <%-- Input to guess the letters --%>

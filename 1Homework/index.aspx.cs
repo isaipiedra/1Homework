@@ -44,15 +44,15 @@ namespace _1Homework
             //Start the players opportunities (6)
             opportunities.Text = "6";
 
-            //Generate a random number between 2 and 11 to choose a word randomly
+            //Generate a random number between 2 and 26 to choose a word randomly
             Random random = new Random();
-            int randomPosition = random.Next(2, 11);
+            int randomPosition = random.Next(2, 26);
 
             //Opens the excel document with the word database
             SLDocument words = new SLDocument("G:\\Desarrollo Web Duodécimo\\Programación para web\\PRIMER SEMESTRE\\1 TAREA\\1Homework\\DataBase\\hangmanWords.xlsx");
             
             //Set the value of the label showing the word to a randomly picked one
-            string value = words.GetCellValueAsString(randomPosition, 1);
+            string value = words.GetCellValueAsString(randomPosition, 1).ToUpper();
             //Create a string for storing the spaces
             string spaces = string.Empty;
 
@@ -84,7 +84,7 @@ namespace _1Homework
             int oppNum = Convert.ToInt32(opportunities.Text);
 
             GameService newLetterGuess = new GameService();
-            string [] cases = newLetterGuess.guessLetter(oppNum, letterGuessed.Text.Trim(), word.Attributes["value"], word.Text);
+            string [] cases = newLetterGuess.guessLetter(oppNum, (letterGuessed.Text.Trim()).ToUpper(), word.Attributes["value"], word.Text);
 
             if (cases[0] == "false" && cases[1] == "false")
             {
@@ -94,7 +94,7 @@ namespace _1Homework
                 results.Visible = true;
 
                 //Add the results to the page
-                results.Attributes.Add("class", "d-inline ms-3 text-danger fw-bold");
+                results.Attributes.Add("class", "d-inline-block me-3 mt-3 text-danger fw-bold fs-3 bg-light bg-opacity-50 p-2 rounded");
                 results.Text = $"Try again! You didn't guessed it correctly, the word was: \"{word.Attributes["value"]}\"";
             } 
             else if (cases[0] == "false" && cases[1] == "true")
@@ -111,7 +111,7 @@ namespace _1Homework
                 results.Visible = true;
 
                 //Add the results to the page
-                results.Attributes.Add("class", "d-inline ms-3 text-success fw-bold");
+                results.Attributes.Add("class", "d-inline-block me-3 mt-3 text-success fw-bold fs-3 bg-light bg-opacity-50 p-2 rounded");
                 results.Text = $"Congratulations! You won this round, with the world \"{word.Attributes["value"]}\"";
             } 
             else if (cases[0] == "null")

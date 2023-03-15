@@ -21,7 +21,7 @@ namespace _1Homework.Modules
             }
             else
             {
-                return $"<h1 class=\"position-absolute text-danger\">ERROR</h1>";
+                return $"<b>Error</b> - Unvalid credentials, try again";
             }
         }
 

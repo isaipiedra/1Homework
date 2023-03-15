@@ -40,6 +40,10 @@
                         <h1 class="ps-3">Welcome!</h1>
                     </div>
                     <p class="">Write down your credentials to access our page.</p>
+                    <div id="credentialAlert" runat="server" class="alert alert-danger visually-hidden" role="alert">
+                        <i class='bx bx-error-alt'></i>
+                        <asp:Label ID="errorMsg" runat="server" Text=""></asp:Label>
+                    </div>
                     <%-- Log In form --%>
                     <form id="form1" runat="server">
                         <%-- Username icon and input --%>
